@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,600;0,700;1,300&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Theme */
+@layer {
+  body {
+    background-color: #ffffff;
+    color: #2f3338;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: bold;
+  }
+}
