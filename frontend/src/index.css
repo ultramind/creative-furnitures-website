@@ -6,7 +6,7 @@
 /* Theme */
 @layer {
   body {
-    background-color: #ffffff;
+    background-color: #f6f6f6;
     color: #2f3338;
     font-family: "Josefin Sans", sans-serif;
   }
@@ -16,5 +16,9 @@
   h3,
   h4 {
     font-weight: bold;
+  }
+
+  p{
+    font-size: 20px;
   }
 }

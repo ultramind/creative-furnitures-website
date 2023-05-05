@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div className="w-full ">
       {/* top */}
-      <div className="flex justify-between text-lg items-center px-[20%] h-12">
+      <div className="flex justify-between text-lg items-center px-[20%] h-12 md:px-[15%]">
         <h3>+234 07062668228</h3>
         <div className="flex gap-6">
           <span>Compare</span>
@@ -18,13 +18,13 @@ const Header = () => {
         </div>
       </div>
       {/* NavBar */}
-      <div className="flex justify-between text-lg px-[20%] items-center h-16 border-t-2 border-gray-200">
+      <div className="flex justify-between text-lg px-[20%] items-center h-16 border-t-2 border-gray-200 md:px-[15%]">
         {/* logo */}
         <div className="logo">
           <img src={logo} alt="" />
         </div>
         {/* links */}
-        <div className="links space-x-8 font-bold">
+        <div className="links space-x-8 font-">
           <a href="#" className="hover:text-primary">
             Home
           </a>
@@ -39,7 +39,7 @@ const Header = () => {
           </a>
         </div>
         {/* cart */}
-        <div className="flex space-x-4">
+        <div className="flex space-x-6">
           <a href="#">
             <IoSearchOutline size={25} />
           </a>
