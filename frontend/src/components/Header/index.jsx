@@ -3,6 +3,8 @@ import logo from "../../assets/images/logo_dark.png";
 import { IoSearchOutline } from "react-icons/io5";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaRegUser } from "react-icons/fa";
+import { Link, NavLink } from "react-router-dom";
+import "./styles.css";
 
 const Header = () => {
   return (
@@ -25,28 +27,30 @@ const Header = () => {
         </div>
         {/* links */}
         <div className="links space-x-8 font-">
-          <a href="#" className="hover:text-primary">
+          <NavLink to="/" className="hover:text-primary">
             Home
-          </a>
-          <a href="#" className="hover:text-primary">
+          </NavLink>
+          <NavLink to="/about-us" className="hover:text-primary">
             About Us
-          </a>
-          <a href="#" className="hover:text-primary">
+          </NavLink>
+          <NavLink to="categories" className="hover:text-primary">
             Categories
-          </a>
-          <a href="#" className="hover:text-primary">
+          </NavLink>
+          <NavLink to="contact-us" className="hover:text-primary">
             Contact Us
-          </a>
+          </NavLink>
         </div>
         {/* cart */}
         <div className="flex space-x-6">
-          <a href="#">
+          <Link to="#">
             <IoSearchOutline size={25} />
-          </a>
-          <a href="#" className="relative">
-            <span className="absolute -right-3 -top-3 bg-primary h-5 w-5 flex justify-center items-center text-white text-sm rounded-full">2</span>
+          </Link>
+          <Link to="#" className="relative">
+            <span className="absolute -right-3 -top-3 bg-primary h-5 w-5 flex justify-center items-center text-white text-sm rounded-full">
+              2
+            </span>
             <AiOutlineShoppingCart size={25} />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -3,17 +3,26 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Header from "./components/Header";
-import Home from "./screens/Home";
+import Home from "./pages/Home";
 import Hero from "./components/Hero";
+import Layout from "./pages/PageLayout";
+import { Route, Routes } from "react-router-dom";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
+import NotFound from "./pages/NotFound";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="w-full border-blue-600 border-3">
-      <Header />
-      <Home />
-    </div>
+    <>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="about-us" element={<AboutUs />} />
+          <Route path="contact-us" element={<ContactUs />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 
