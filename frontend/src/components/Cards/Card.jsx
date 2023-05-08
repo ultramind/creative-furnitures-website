@@ -4,7 +4,7 @@ import { AiFillStar } from "react-icons/ai";
 const Card = ({ product }) => {
   const { title, description, image, price, stock } = product;
   return (
-    <div className="border-2 w-1/5 grow  shrink border-gray-200 rounded-xl h-auto">
+    <div className="border-2 w-1/5 grow shrink border-gray-200 rounded-xl h-auto">
       <div className="h-[70%]">
         <img src={image} alt="" />
       </div>

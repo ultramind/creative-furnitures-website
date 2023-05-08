@@ -11,7 +11,7 @@ const BigCard = () => {
           Shop Now
         </a>
       </div>
-      <div className="float-right w-[50%]">
+      <div className="float-right w-[40%]">
         <img src={image} alt="" />
       </div>
     </div>

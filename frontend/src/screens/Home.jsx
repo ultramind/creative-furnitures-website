@@ -5,6 +5,8 @@ import Card from "../components/Cards/Card";
 import products from "../constants/products";
 import MediumCard from "../components/Cards/MediumCard";
 import BigCard from "../components/Cards/BigCard";
+import { Carousel } from "react-responsive-carousel";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const [allProducts, setProducts] = useState([]);
@@ -32,6 +34,7 @@ const Home = () => {
         <MediumCard />
         <BigCard />
       </div>
+      <Footer />
     </div>
   );
 };
