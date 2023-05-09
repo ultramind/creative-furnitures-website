@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/images/logo_dark.png";
-import { IoSearchOutline } from "react-icons/io5";
+import { IoGitCompare, IoSearchOutline } from "react-icons/io5";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaRegUser } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
@@ -12,11 +12,13 @@ const Header = () => {
       {/* top */}
       <div className="flex justify-between text-lg items-center px-[20%] h-12 md:px-[15%]">
         <h3>+234 07062668228</h3>
-        <div className="flex gap-6">
-          <span>Compare</span>
-          <span className="flex gap-2">
+        <div className="flex items-center gap-6">
+          <Link to="login" className="flex gap-2">
+            <IoGitCompare /> Compare
+          </Link>
+          <Link to="login" className="flex gap-2">
             <FaRegUser /> Login
-          </span>
+          </Link>
         </div>
       </div>
       {/* NavBar */}

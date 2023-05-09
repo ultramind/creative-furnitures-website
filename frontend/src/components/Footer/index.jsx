@@ -7,8 +7,8 @@ import { TfiTwitter } from "react-icons/tfi";
 const Footer = () => {
   return (
     <>
-      <div className="px-[20%] py-20 bg-[#202325] text-white flex space-x-12">
-        <div className="flex-col space-y-4 w-1/2">
+      <div className="px-4 py-12 lg:px-[10%] md:-[10%] flex flex-col space-y-8 bg-[#202325] text-white md:flex-row md:space-x-12 md:py-20 md:space-y-0">
+        <div className="flex-col space-y-4 lg:w-1/2">
           <h2 className="text-xl font-bold mb-4">Contact Info</h2>
           <p>123 Street, Old Trafford, NewYork, USA</p>
           <a href="" className="block">
@@ -29,7 +29,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="flex-col space-y-4 w-1/4">
+        <div className="flex-col space-y-4 lg:w-1/4">
           <h2 className="text-xl font-bold mb-4">Useful Links</h2>
 
           <div className="space-y-4">
@@ -47,7 +47,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="flex-col space-y-4 w-1/4">
+        <div className="flex-col space-y-4 lg:w-1/4">
           <h2 className="text-xl font-bold mb-4">My Account</h2>
 
           <div className="space-y-4">
