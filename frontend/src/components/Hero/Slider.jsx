@@ -5,24 +5,23 @@ const Slider = ({ slider }) => {
   const { title, description, image, bgColor } = slider;
   return (
     <div
-      className={`px-[20%] text-left ${bgColor} flex h-[70vh] justify-around items-center md:px-[15%] `}
+      className={`flex ${bgColor} h-[75vh] flex-col-reverse py-12 pl-6 text-left md:flex-row md:px-[10%] justify-center items-center md:h-[50vh]`}
     >
-      <div className="w-[55%] space-y-8">
-        <h1 className="text-6xl font-bold md:text-5xl">{title}</h1>
-        <p>
+      <div className="space-y-4 md:space-y-8">
+        <h1 className="text-3xl font-bold md:text-5xl">{title}</h1>
+        <p className="">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam error
-          quidem cum, aperiam optio sed sit doloremque harum excepturi ratione
-          eaque eius ipsam! Incidunt nostrum iure nihil quam ipsam placeat.
+          quidem cum, aperiam optio sed sit doloremque harum excepturi ratione.
         </p>
         <a
           href="#"
-          className="inline-block px-5 py-2 border-2 border-gray-600 rounded-lg "
+          className="inline-block px-5 py-2 border-2 border-gray-600 rounded-lg ease-in-out duration-150 hover:bg-primary hover:text-white hover:border-primary"
         >
           Shop Now
         </a>
       </div>
-      <div>
-        <img src={image} alt="" className="w-[100%]" />
+      <div className="">
+        <img src={image} alt="" className="" />
       </div>
     </div>
   );
