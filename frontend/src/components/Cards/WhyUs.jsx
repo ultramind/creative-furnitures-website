@@ -5,7 +5,7 @@ import { SiSpringsecurity } from "react-icons/si";
 
 const WhyUs = () => {
   return (
-    <div className=" flex flex-row flex-wrap my-12 justify-center px-8 md:px-[15%]">
+    <div className=" flex flex-row flex-wrap my-12 justify-center px-8 md:px-[10%]">
       <div className="basis-64 grow shrink border-2 border-gray-300 p-4 flex justify-center items-center space-x-4">
         <GiTruck size={50} className="text-primary" />
         <div>

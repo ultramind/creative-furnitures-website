@@ -20,17 +20,17 @@ const Home = () => {
         <div>
           <WhyUs />
         </div>
-        <div className="px-[15%]">
+        <div className="md:px-[10%] my-12">
           <h1 className="text-center text-5xl font-bold">Exclusive Products</h1>
 
-          <div className="flex gap-8 py-24 flex-wrap">
+          <div className="flex gap-4 py-12 px-4 flex-wrap justify-center">
             {products.map((product, index) => {
               return <Card product={product} key={index} />;
             })}
           </div>
         </div>
         {/* Advert Card */}
-        <div className="px-[15%] mb-[5%]  flex gap-16">
+        <div className="px-4 md:px-[15%] mb-[5%]  flex gap-16 ">
           <MediumCard />
           <BigCard />
         </div>
