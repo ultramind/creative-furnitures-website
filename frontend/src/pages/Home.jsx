@@ -6,11 +6,28 @@ import products from "../constants/products";
 import MediumCard from "../components/Cards/MediumCard";
 import BigCard from "../components/Cards/BigCard";
 import { Carousel } from "react-responsive-carousel";
+import axios from "axios";
+import Loader from "../components/Loader";
 
 const Home = () => {
   const [allProducts, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  // useEffect(() => {
+  //   setProducts(products);
+  // }, []);
+
   useEffect(() => {
-    setProducts(products);
+    const getProducts = async () => {
+      try {
+        const { data } = await axios.get("http://localhost:8000/api/products");
+        setProducts(data);
+        setLoading(false);
+      } catch (error) {
+        // toast.error(getError(error));
+        console.log(error);
+      }
+    };
+    getProducts();
   }, []);
 
   return (
@@ -24,9 +41,13 @@ const Home = () => {
           <h1 className="text-center text-5xl font-bold">Exclusive Products</h1>
 
           <div className="flex gap-4 py-12 px-4 flex-wrap justify-center">
-            {products.map((product, index) => {
-              return <Card product={product} key={index} />;
-            })}
+            {loading ? (
+              <Loader />
+            ) : (
+              allProducts.map((product, index) => {
+                return <Card product={product} key={index} />;
+              })
+            )}
           </div>
         </div>
         {/* Advert Card */}

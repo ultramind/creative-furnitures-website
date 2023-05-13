@@ -16,10 +16,8 @@ const Header = () => {
     const scrollHeight = window.scrollY;
     if (scrollHeight >= 250) {
       setNavEffect(true);
-      console.log(scrollHeight);
     } else {
       setNavEffect(false);
-      console.log(scrollHeight);
     }
   };
 
@@ -29,7 +27,7 @@ const Header = () => {
     <div
       className={`${
         navEffect
-          ? "w-[100%] fixed -top-14 left-0 bg-white shadow-lg z-50 transition-all duration-300  py-2"
+          ? "w-[100%] fixed -top-14 left-0 bg-white shadow-lg z-[999] transition-all duration-300  py-2"
           : ""
       }`}
     >
