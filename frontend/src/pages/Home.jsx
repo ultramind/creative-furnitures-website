@@ -19,7 +19,7 @@ const Home = () => {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const { data } = await axios.get("http://localhost:8000/api/products");
+        const { data } = await axios.get("http://localhost:8000/api/product");
         setProducts(data);
         setLoading(false);
       } catch (error) {
