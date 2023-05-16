@@ -3,8 +3,11 @@ import { AiFillStar, AiOutlineFolderView } from "react-icons/ai";
 import { MdFavoriteBorder } from "react-icons/md";
 import { BsZoomIn, BsShare } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/cartReducer";
 
 const Card = ({ product }) => {
+  const dispatch = useDispatch();
   const { _id, name, images, price, countInStock } = product;
 
   const [hover, setHover] = useState(false);
@@ -43,7 +46,6 @@ const Card = ({ product }) => {
 
           <span className="text-gray-400">({countInStock})</span>
           <br />
-          <span>{`../../${images}`}</span>
         </div>
       </div>
       {/* hover card */}
@@ -68,8 +70,11 @@ const Card = ({ product }) => {
         </div>
         <div className="flex bg-white placeholder-opacity-100 w-full h-[37%] flex-col space-y-4 justify-center items-center">
           <h2 className="text-lg font-semibold">{name}</h2>
-          <button className="bg-primary px-4 py-2 text-white rounded-lg">
-            Add to Cart
+          <button
+            onClick={() => dispatch(addToCart(product))}
+            className="bg-primary px-4 py-2 text-white rounded-lg"
+          >
+            Add to Cart 
           </button>
         </div>
       </div>

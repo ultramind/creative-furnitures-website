@@ -1,0 +1,83 @@
+[33mcommit e73ff2230d1f3dabfdaa349b6cf1abc02b68ae43[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: ultragrace <udechukwuakachukwu.com>
+Date:   Sat May 13 02:30:22 2023 +0100
+
+    called the GetProduct API to fetch single product
+
+[33mcommit b237fef2cda5dde4923d6dd13da27ec3fdf7afb3[m
+Author: ultragrace <udechukwuakachukwu.com>
+Date:   Sat May 13 02:00:37 2023 +0100
+
+    created the controllers for the backend
+
+[33mcommit 66ac3135b82dacce4c2a12367a925f3acfc69c54[m
+Author: ultragrace <udechukwuakachukwu.com>
+Date:   Thu May 11 00:41:03 2023 +0100
+
+    Done with the card component
+
+[33mcommit cebad3f1f6d379e7401ce1d664646ea351fd7b43[m
+Author: ultragrace <udechukwuakachukwu.com>
+Date:   Wed May 10 22:48:25 2023 +0100
+
+    Done with everything on the WhyMe component
+
+[33mcommit 0cb02b8536b457d39e9c909632de8d74c5df1bc2[m
+Author: ultragrace <udechukwuakachukwu.com>
+Date:   Wed May 10 21:46:42 2023 +0100
+
+    Done with everything concerning the slider both desktop and mobile view
+
+[33mcommit 388254234f7d5349e754bf0bc51ebe2ce0a8ce09[m
+Author: ultragrace <udechukwuakachukwu.com>
+Date:   Tue May 9 02:53:18 2023 +0100
+
+    Done with header nav component styles and effect
+
+[33mcommit a6a84310b426939ad2a71d3451db232ca128a9ab[m
+Author: ultragrace <udechukwuakachukwu.com>
+Date:   Mon May 8 23:45:26 2023 +0100
+
+    Working on the site routes
+
+[33mcommit cde5e4f722c69ddaa6ef2d51a25ecb3180b3e2a0[m
+Author: ultragrace <udechukwuakachukwu.com>
+Date:   Mon May 8 16:05:17 2023 +0100
+
+     Created and styleed the footer component
+
+[33mcommit 9a9503f973134b2f5951ca87edacfe6631e06828[m
+Author: ultragrace <udechukwuakachukwu.com>
+Date:   Sun May 7 01:38:58 2023 +0100
+
+    Created all card sizes
+
+[33mcommit 3aaa5af5b2e3f607caa5453cda97b884488589c1[m
+Author: ultragrace <udechukwuakachukwu.com>
+Date:   Sat May 6 00:06:38 2023 +0100
+
+    Creaed the Hero section and WhyUs components
+
+[33mcommit bab9ad862f7ad813df35b40262fad4a732f11730[m
+Author: ultragrace <udechukwuakachukwu.com>
+Date:   Thu May 4 23:53:07 2023 +0100
+
+    Created  the header component
+
+[33mcommit 065bf2e7af526ff19e9d5c8ff9b127d36ab0a2bb[m
+Author: ultragrace <udechukwuakachukwu.com>
+Date:   Thu May 4 02:13:07 2023 +0100
+
+    Setting the project up including folder structure
+
+[33mcommit c1d454c8396f3fcda3adade2d3434c81ae4fcae5[m
+Author: ultragrace <udechukwuakachukwu.com>
+Date:   Thu May 4 00:55:57 2023 +0100
+
+    installed the tailwind css  to the project
+
+[33mcommit c1a1ec934c6e9dff997eedbe33a116f1e236f551[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: ultragrace <udechukwuakachukwu.com>
+Date:   Thu May 4 00:47:17 2023 +0100
+
+    My first commit for the furnture E-commerce app

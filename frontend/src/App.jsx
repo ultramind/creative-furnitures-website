@@ -11,6 +11,8 @@ import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
 import axios from "axios";
 import Product from "./pages/Product";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [categories, setCategories] = useState([]);
@@ -39,6 +41,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
+      <ToastContainer />
     </>
   );
 }

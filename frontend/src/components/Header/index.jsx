@@ -6,8 +6,12 @@ import { FaRegUser } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import "./styles.css";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+  // global state
+  const { cartItems } = useSelector((state) => state.cart);
+  console.log(cartItems);
   const [toggle, setToggle] = useState(false);
 
   const [navEffect, setNavEffect] = useState(false);
@@ -90,9 +94,12 @@ const Header = () => {
             <IoSearchOutline size={25} />
           </Link>
           <Link to="#" className="relative">
-            <span className="absolute -right-3 -top-3 bg-primary h-5 w-5 flex justify-center items-center text-white text-sm rounded-full">
-              2
-            </span>
+            {cartItems.length > 0 && (
+              <span className="absolute -right-3 -top-3 bg-primary h-5 w-5 flex justify-center items-center text-white text-sm font-bold rounded-full">
+                {cartItems.length}
+              </span>
+            )}
+
             <AiOutlineShoppingCart size={25} />
           </Link>
           {toggle ? (
